@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.grid-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-1 .wrapper .logo{
+    margin-bottom: .75rem;
+}
+
+.grid-1 .wrapper .text{
+    margin-bottom: 1.75rem;
+}
+
+.grid-1 .wrapper .text .main-heading{
+    font-size: 36px;
+    margin-bottom: -0.25rem;
+}
+
+.grid-1 .wrapper .text .sub-heading{
+    font-size: 15px;
+}
+
+.grid-1 .wrapper .text .sub-heading a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* name */
+
+.grid-1 .wrapper .form-fields .name-field {
+    margin-bottom: 1rem;
+}
+
+.grid-1 .wrapper .form-fields .name-field p{
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.grid-1 .wrapper .form-fields .name-field span{
+    color: red;
+}
+
+.grid-1 .wrapper .form-fields .name-field input{
+    padding: .75rem;
+    border: 1px solid #adadaddd;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.grid-1 .wrapper .form-fields .name-field input:focus{
+    border-bottom-width: 2px;
+}
+
+/* name */
+
+.grid-1 .wrapper .form-fields .email-field {
+    margin-bottom: 1rem;
+}
+
+.grid-1 .wrapper .form-fields .email-field p{
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.grid-1 .wrapper .form-fields .email-field span{
+    color: red;
+}
+
+.grid-1 .wrapper .form-fields .email-field input{
+    padding: .75rem;
+    border: 1px solid #adadaddd;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.grid-1 .wrapper .form-fields .email-field input:focus{
+    border-bottom-width: 2px;
+}
+
+.grid-1 .wrapper .form-fields .pass-field {
+    position: relative;
+    margin-bottom: .75rem;
+}
+
+.grid-1 .wrapper .form-fields .pass-field p{
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.pass-field #message{
+    display: none;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.grid-1 .wrapper .form-fields .pass-field .asterisk{
+    color: red;
+}
+
+.grid-1 .wrapper .form-fields .pass-field .password{
+    padding: .75rem;
+    border: 1px solid #adadaddd;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.grid-1 .wrapper .form-fields .pass-field input:focus{
+    border-bottom-width: 2px;
+}
+
+.show-pass{
+    font-size: 14px;
+    margin-bottom: 0.15rem;
+}
+
+.grid-1 .wrapper .remember-forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-1 .wrapper .remember-forgot-signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.grid-1 .wrapper .remember-forgot .remember{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* CHANGE IN SIGNUP */
+.grid-1 .wrapper .remember-forgot-signup .remember{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* CHANGE IN SIGNUP || added "a" tag for linking terms and conditions ||  */
+.grid-1 .wrapper .remember-forgot-signup .remember a{
+    color: blue;
+    padding-left: 0.1rem;
+}
+
+.grid-1 .wrapper .remember-forgot .remember input{
+    position: relative;
+    top: 1px;
+}
+
+/* CHANGE IN SIGNUP */
+.grid-1 .wrapper .remember-forgot-signup .remember .signup-box{
+    position: relative;
+    top: 1px;
+}
+
+/* CHANGE IN SIGNUP */
+.grid-1 .wrapper .remember-forgot-signup .forgot-signup{
+    visibility: hidden;
+}
+
+/* CHANGE IN SIGNUP */
+.grid-1 .wrapper .remember-forgot-signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-1 .wrapper .remember-forgot .forgot a{
+    font-size: 14px;
+    text-decoration: none;
+    color: blue;
+}
+
+.grid-1 .wrapper .login-btn .btn{
+    padding: 0.7rem 0;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #3399ff, #3089ff, #4e75ff, #745aff, #9a2bff);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+    margin: 2rem 0;
+}
+
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 1rem;
+    font-weight: 300;
+}
+
+.login-google{
+    text-align: center;
+}
+
+.login-google .btn{
+    padding: 0.7rem 0;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d4d1df;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-google img{
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.no-acc{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.no-acc p{
+    font-size: 16px;
+}
+
+.no-acc a{
+    color: blue;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.grid-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-2 .grid-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*========== MEDIA BREAKPOINTS ==========*/
+@media screen and (max-width: 840px) {
+    
+    .grid-1 {
+        padding: 0 2rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot-signup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot-signup .remember a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        background-image: url("../assets/ball-vector.jpg");
+    }
+
+    .wrapper{
+        background: rgba( 255, 255, 255, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 2rem;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+
+    .grid-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-2 {
+        display: none;
+    }
+
+    .grid-1 .wrapper .remember-forgot .remember {
+        font-weight: 500;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot a {
+        font-weight: 500;
+    }
+    
+    .line {
+        position: relative;
+        height: 1px;
+        width: 100%;
+        background-color: #d4d4d400;
+        margin: 2rem 0;
+    }   
+
+    .line::before {
+        content: 'or';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff00;
+        color: #232836;
+        padding: 0 1rem;
+        font-weight: 600;
+    }
+
+    .grid-1 .wrapper .login-btn .btn {
+        font-weight: 500;
+    }
+
+    .login-google .btn {
+       font-weight: 500;
+    }
+
+    .no-acc p {
+        font-weight: 500;
+    }
+
+    .grid-1 .wrapper .form-fields .email-field input {
+        border: 1px solid #d1d1d1;
+        background-color: hsla(0, 0%, 100%, 0.5);
+    }
+
+    .grid-1 .wrapper .form-fields .pass-field input {
+        border: 1px solid #d1d1d1;
+        outline: none;
+        background-color: hsla(0, 0%, 100%, 0.5);
+    }
+    
+    .grid-1 .wrapper .form-fields .name-field input {
+        border: 1px solid #d1d1d1;
+        background-color: hsla(0, 0%, 100%, 0.5);
+    }
+
+    .login-google .btn {
+        border: 1px solid #a0a0a0;
+    }
+
+    .show-pass {
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    
+    .wrapper {
+        background: rgba( 255, 255, 255, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 1rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot-signup .remember a {
+        font-size: 13px;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot a {
+        font-size: 11px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .grid-1 .wrapper .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot .remember {
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .show-pass {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .grid-1 {
+        padding: 0 0rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .grid-1 {
+        padding: 0 1rem;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+    
+    .wrapper {
+        background: rgba( 255, 255, 255, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 1rem;
+    }
+
+    .grid-1 {
+        padding: 0 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    .grid-1 .wrapper .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot {
+        margin-bottom: 0.25rem;
+    }
+
+    .show-pass {
+        margin-left: 0.25rem;
+    }
+        
+}
+
+@media screen and (max-width: 330px) {
+    
+    .grid-1 .wrapper .text .main-heading {
+        font-size: 30px;
+        margin-bottom: -0.25rem;
+    }
+
+    .grid-1 .wrapper .text .sub-heading {
+        font-size: 13px;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot a {
+        font-size: 12px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .no-acc p {
+        font-size: 14px;
+    }
+
+    .no-acc a {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        background: rgba( 255, 255, 255, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 1rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .grid-1 .wrapper .remember-forgot .forgot a {
+        font-size: 10px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot{
+        margin-bottom: 0.25rem;
+    }
+
+    .show-pass {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    .grid-1 .wrapper .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .wrapper {
+        background: rgba( 255, 255, 255, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 1rem;
+    }
+
+    .grid-1 {
+        padding: 0 .5rem;
+    }
+
+    .grid-1 .wrapper .text .main-heading {
+        font-size: 28px;
+        margin-bottom: -0.25rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot .remember {
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .grid-1 .wrapper .remember-forgot .forgot a {
+        font-size: 6.5px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .no-acc p {
+        font-size: 12px;
+    }
+
+    .no-acc a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    
+    .grid-1 .wrapper .text .main-heading {
+        font-size: 26px;
+        margin-bottom: -0.25rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1.15rem;
+    }
+
+    .grid-1 .wrapper .remember-forgot .remember {
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .no-acc p {
+        font-size: 12px;
+    }
+
+    .no-acc a {
+        font-size: 12px;
+    }
+}
